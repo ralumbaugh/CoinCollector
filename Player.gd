@@ -7,16 +7,16 @@ func _physics_process(delta):
 	velocity.y = 0
 	
 	if Input.is_key_pressed(KEY_LEFT):
-		velocity.x -= 1
+		velocity.x -= 60 * delta
 	
 	if Input.is_key_pressed(KEY_RIGHT):
-		velocity.x += 1
+		velocity.x += 60 * delta
 		
 	if Input.is_key_pressed(KEY_UP):
-		velocity.y -= 1
+		velocity.y -= 60 * delta
 	
 	if Input.is_key_pressed(KEY_DOWN):
-		velocity.y += 1
+		velocity.y += 60 * delta
 		
 	velocity *= move_speed
 	
